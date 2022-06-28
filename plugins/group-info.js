@@ -12,7 +12,7 @@ ${groupMetadata.id}
 *Name:* 
 ${groupMetadata.subject}
 *Description:* 
-${groupMetadata.desc?.toString() || 'unknown'}
+${Buffer.from(groupMetadata.desc.data).toString() || 'unknown'}
 *Total Members:*
 ${participants.length} Members
 *Group Owner:* 
